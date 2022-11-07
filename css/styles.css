@@ -86,11 +86,11 @@ svg {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.no-padding {
+.section--no_padding {
   padding-bottom: 0;
 }
 /* title */
-.section-title {
+.section__title {
   margin-bottom: 50px;
   text-align: center;
 
@@ -116,7 +116,7 @@ svg {
   margin-bottom: 0;
   border-bottom: 1px solid var(--header-border-color);
 }
-.main-nav {
+.page-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +130,7 @@ svg {
   color: var(--primary-accent-color);
   text-decoration: none;
 }
-.logo.text {
+.logo_text {
   color: var(--primary-black-color);
 }
 /* Navigation */
@@ -139,7 +139,7 @@ svg {
   margin-left: 93px;
   gap: 50px;
 }
-.site-nav .link {
+.site-nav__link {
   position: relative;
 
   display: flex;
@@ -155,14 +155,14 @@ svg {
 
   transition: color 250ms var(--timing-function);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link:hover,
+.site-nav__link:focus {
   color: var(--primary-accent-color);
 }
-.link.current {
+.site-nav__link--current {
   color: var(--primary-accent-color);
 }
-.link.current::after {
+.site-nav__link--current::after {
   position: absolute;
   bottom: 0;
 
@@ -183,7 +183,7 @@ svg {
 
   align-items: center;
 }
-.contact-link {
+.contact-list__link {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -197,26 +197,17 @@ svg {
 
   transition: color 250ms var(--timing-function);
 }
-.contact-link:hover,
-.contact-link:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: var(--primary-accent-color);
 }
-.mail-icon {
+.contact-list__icon {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
-
-  fill: currentColor;
-}
-.tel-icon {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
 
   fill: currentColor;
 }
 /* Hero */
-.hero-overlay {
+.hero {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -229,7 +220,7 @@ svg {
   background-size: cover;
   background-position: center;
 }
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -240,7 +231,7 @@ svg {
   text-transform: uppercase;
 }
 /* Order button */
-.order-button {
+.hero__button {
   padding: 10px 32px;
   min-width: 216px;
 

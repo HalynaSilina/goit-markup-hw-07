@@ -1,10 +1,10 @@
 .site-nav {
-  @extend .list;
+  @extend %list;
   display: flex;
   margin-left: 93px;
   gap: 50px;
 &__link {
-  @extend .link;
+  @extend %link;
   position: relative;
 
   display: flex;
@@ -27,7 +27,7 @@
 &__link--current {
   color: $primary-accent-color;
 }
-.&__link--current::after {
+&__link--current::after {
   position: absolute;
   bottom: 0;
 

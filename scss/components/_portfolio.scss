@@ -39,7 +39,12 @@
   color: $projects-thumb-text;
   background-color: $projects-thumb-bg;
 
-  transition: transform 250ms $timing-function;
+  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+}
+.card-set__link:hover &__description,
+.card-set__link:focus &__description {
+  transform: translateY(0%);
+  opacity: 1;
 }
 &__content {
   padding: 20px 24px;
@@ -58,10 +63,5 @@
 &__text {
   font-size: 16px;
   line-height: 1.87;
-}
-.card-set__link:hover &__description,
-.card-set__link:focus &__description {
-  transform: translateY(0%);
-  opacity: 1;
 }
 }

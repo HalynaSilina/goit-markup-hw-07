@@ -10,11 +10,11 @@
   background-color: $primary-white-color;
   box-shadow: $modal-window-shadow;
   border-radius: 4px;
-  transition: transform 2500ms $timing-function;
+  transition: transform 250ms $timing-function;
 
 .backdrop.backdrop--is_hidden & {
   transform: translate(-50%, -50%) scale(0.8);
- }
+}
 &__button {
   position: absolute;
   top: 8px;
